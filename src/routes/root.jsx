@@ -5,6 +5,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Header from "../header.jsx";
 
 const bull = (
   <Box
@@ -40,9 +41,16 @@ export default function Root() {
   };
 
   return (
-    <div className="App">
+    <div>
+      <Header />
       {/* 5. Using *dogImage as* the *src* for our image*/}
-      <div style={{ display: "flex", gap: "10px" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "10px",
+          justifyContent: "center",
+          marginTop: "50px",
+        }}>
         <img
           src={
             dogImage
@@ -67,7 +75,6 @@ export default function Root() {
           </CardContent>
         </Card>
       </div>
-
       <div
         style={{
           display: "flex",
